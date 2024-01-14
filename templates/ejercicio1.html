@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Notas</title>
+     <link rel="stylesheet" href="/static/css/estilos.css">
 </head>
 <body>
-$END$
+
+<div class="container">
+
+    <h2>Formulario de Notas</h2>
+    <!-- ejericio 1.html -->
+    <form action="/ejercicio1" method="POST">
+        <div class="form-group">
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" name="nota1">
+        </div>
+         <div class="form-group">
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" name="nota2">
+        </div>
+         <div class="form-group">
+            <label for="nota3">Nota 3:</label>
+            <input type="number" id="nota3" name="nota3">
+        </div>
+         <div class="form-group">
+            <label for="asistencia">Asistencia (%):</label>
+            <input type="number" id="asistencia" name="asistencia">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Enviar">
+        </div>
+        <div>
+            <h3> {{ resultado }}</h3>
+            <h3> {{ promedio }}</h3>
+        </div>
+
+    </form>
+</div>
 </body>
 </html>
